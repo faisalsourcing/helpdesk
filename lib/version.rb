@@ -1,0 +1,23 @@
+#DevsQuest, https://devsquest.com/
+
+class Version
+
+=begin
+
+Returns version number of application
+
+  version = Version.get
+
+returns
+
+  '1.3.0' # example
+
+=end
+
+  def self.get
+    File.read(Rails.root.join('VERSION')).strip
+  rescue => e
+    Rails.logger.error "VERSION file could not be read: #{e}"
+    ''
+  end
+end

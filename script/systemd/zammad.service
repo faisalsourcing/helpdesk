@@ -1,0 +1,18 @@
+[Unit]
+Description=devsquest
+After=syslog.target
+After=network.target
+StopWhenUnneeded=true
+Wants=devsquest-rails.service
+Wants=devsquest-scheduler.service
+Wants=devsquest-websocket.service
+
+[Service]
+EnvironmentFile=/etc/devsquest/devsquest.env
+User=devsquest
+Group=devsquest
+Restart=always
+ExecStart=/bin/sleep infinity
+
+[Install]
+WantedBy=multi-user.target

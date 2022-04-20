@@ -1,0 +1,20 @@
+[Unit]
+Description=devsquest scheduler
+After=syslog.target
+After=network.target
+After=devsquest.service
+Requires=devsquest.service
+
+[Service]
+Type=forking
+EnvironmentFile=/etc/devsquest/devsquest.env
+User=devsquest
+Group=devsquest
+Restart=always
+
+WorkingDirectory=/opt/devsquest
+
+ExecStart=/bin/bash -l -c "${BUNDLE_BINARY} exec script/scheduler.rb start"
+
+[Install]
+WantedBy=devsquest.service

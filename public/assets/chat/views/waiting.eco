@@ -1,0 +1,9 @@
+<div class="devsquest-chat-modal-text">
+  <span class="devsquest-chat-loading-animation">
+    <span class="devsquest-chat-loading-circle"></span>
+    <span class="devsquest-chat-loading-circle"></span>
+    <span class="devsquest-chat-loading-circle"></span>
+  </span>
+  <%- @T('All colleagues are busy.') %><br>
+  <%- @T('You are on waiting list position <strong>%s</strong>.', @position) %>
+</div>

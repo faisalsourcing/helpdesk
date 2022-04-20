@@ -1,0 +1,25 @@
+#DevsQuest, https://devsquest.com/
+
+class Sequencer
+  class Unit
+    module Import
+      module Kayako
+        module ObjectAttribute
+          module AttributeType
+            class Date < Sequencer::Unit::Import::Kayako::ObjectAttribute::AttributeType::Base
+              private
+
+              def data_type_specific_options
+                {
+                  future: true,
+                  past:   true,
+                  diff:   0,
+                }
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end

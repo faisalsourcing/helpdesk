@@ -1,0 +1,9 @@
+<div class="devsquest-chat-message devsquest-chat-message--typing devsquest-chat-message--agent">
+  <span class="devsquest-chat-message-body">
+    <span class="devsquest-chat-loading-animation">
+      <span class="devsquest-chat-loading-circle"></span>
+      <span class="devsquest-chat-loading-circle"></span>
+      <span class="devsquest-chat-loading-circle"></span>
+    </span>
+  </span>
+</div>

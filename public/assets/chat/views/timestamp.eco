@@ -1,0 +1,1 @@
+<div class="devsquest-chat-timestamp"><strong><%= @label %></strong> <%= @time %></div>

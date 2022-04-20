@@ -1,0 +1,3 @@
+<div class="devsquest-chat-message devsquest-chat-message--<%= @from %><%= @unreadClass %>">
+  <span class="devsquest-chat-message-body"<%= " style='background: #{ @background }'" if @background and @from is 'customer' %>><%- @message %></span>
+</div>

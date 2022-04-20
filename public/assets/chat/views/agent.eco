@@ -1,0 +1,6 @@
+<% if @agent.avatar: %>
+<img class="devsquest-chat-agent-avatar" src="<%= @agent.avatar %>">
+<% end %>
+<span class="devsquest-chat-agent-sentence">
+  <span class="devsquest-chat-agent-name"><%= @agent.name %></span>
+</span>

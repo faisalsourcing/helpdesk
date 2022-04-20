@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# packager.io postinstall script config
+#
+
+devsquest_DIR="/opt/devsquest"
+DB="devsquest"
+DB_USER="devsquest"
+MY_CNF="/etc/mysql/debian.cnf"
+devsquest_WEBS="1"
+devsquest_WEBSOCKETS="1"
+devsquest_WORKERS="1"
+DEBUG="no"

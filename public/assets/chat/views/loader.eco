@@ -1,0 +1,6 @@
+<span class="devsquest-chat-loading-animation">
+  <span class="devsquest-chat-loading-circle"></span>
+  <span class="devsquest-chat-loading-circle"></span>
+  <span class="devsquest-chat-loading-circle"></span>
+</span>
+<span class="devsquest-chat-modal-text"><%- @T('Connecting') %></span>

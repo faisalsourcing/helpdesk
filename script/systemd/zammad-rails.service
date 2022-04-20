@@ -1,0 +1,19 @@
+[Unit]
+Description=devsquest rails server
+After=syslog.target
+After=network.target
+After=devsquest.service
+Requires=devsquest.service
+
+[Service]
+EnvironmentFile=/etc/devsquest/devsquest.env
+User=devsquest
+Group=devsquest
+Restart=always
+
+WorkingDirectory=/opt/devsquest
+
+ExecStart=/bin/bash -l -c "${BUNDLE_BINARY} exec script/rails server -b ${devsquest_BIND_IP} -p ${devsquest_RAILS_PORT}"
+
+[Install]
+WantedBy=devsquest.service

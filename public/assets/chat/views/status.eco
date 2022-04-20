@@ -1,0 +1,5 @@
+<div class="devsquest-chat-status">
+  <div class="devsquest-chat-status-inner">
+    <%- @status %>
+  </div>
+</div>
